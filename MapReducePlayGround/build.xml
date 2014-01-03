@@ -1,0 +1,66 @@
+<project basedir="." default="jar" name="MapReducePlayGround"> 
+
+<target name="init">
+
+   <!--    java src path --> 
+   <property name="src.dir" value="${basedir}/src" /> 
+
+   <!--    build path --> 
+   <property name="build.dir" value="${basedir}/build" />
+   <property name="build.classes" value="${build.dir}/classes" />
+
+   <!--    jar path --> 
+   <property name="lib.dir" value="${build.dir}/lib" />
+	
+	<!--    jar path --> 
+	<property name="conf.dir" value="${basedir}/conf" />
+
+   <!--    classpath --> 
+   <path id="classpath"> 
+    <fileset dir="${lib.dir}"> 
+        <include name="**/*.jar"/> 
+    </fileset> 
+   </path> 
+
+</target> 
+
+<!-- =================================================================== --> 
+<!-- compile the src --> 
+<!-- =================================================================== --> 
+<target name="compile" depends="init,clean">
+   <!-- create directories --> 
+   <mkdir dir="${build.classes}" /> 
+   <javac srcdir="${src.dir}" destdir="${build.classes}"> 
+      <classpath refid="classpath" /> 
+   </javac>
+   <copy todir="${build.classes}"> 
+      <fileset dir="${src.dir}" > 
+         <include name="*.properties"/> 
+      </fileset> 
+   </copy>
+   <copy todir="${build.classes}"> 
+	      <fileset dir="${conf.dir}" > 
+	         <include name="*.properties"/> 
+	      </fileset> 
+   </copy>
+</target> 
+
+<!-- =================================================================== --> 
+<!-- make jar file --> 
+<!-- =================================================================== --> 
+<target name="jar" depends="compile">
+   <jar destfile="${build.dir}/MapReducePG.jar" basedir="${build.classes}">
+   	  <include name="**/*.class"/>
+   	  <include name="**/*.properties"/>
+   </jar>
+   <antcall target="clean"/>
+</target> 
+
+<!-- =================================================================== --> 
+<!-- clean it--> 
+<!-- =================================================================== --> 
+<target name="clean" depends="init"> 
+   <delete dir="${build.classes}"/> 
+</target> 
+
+</project>

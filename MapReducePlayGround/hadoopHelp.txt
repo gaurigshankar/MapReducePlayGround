@@ -1,0 +1,7 @@
+In Mac for Run configuration
+
+VM Argument
+-Djava.security.krb5.realm= -Djava.security.krb5.kdc=
+
+Program Arguments
+input output
