@@ -1,0 +1,47 @@
+
+ssh-keygen -t dsa -P '' -f ~/.ssh/id_dsa;
+cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys;
+
+
+mkdir HADOOP_HOME;
+cd HADOOP_HOME;
+scp hadoop@172.29.44.67:/home/hadoop/HADOOP_HOME/hadoop-0.20.203.0rc1.tar.gz . ;
+
+
+tar -zxvf hadoop-0.20.203.0rc1.tar.gz
+cd hadoop-0.20.203.0
+mkdir local-conf;
+mkdir cluster-conf;
+mkdir /home/hadoop/hadoopdata/;mkdir /home/hadoop/hadoopdata/hdfs;mkdir /home/hadoop/hadoopdata/hdfs/data;
+mkdir /home/hadoop/hadoopdata/hdfs/name;
+mkdir /tmp/mapred/;mkdir /tmp/mapred/system;
+mkdir /tmp/mapred/local;
+
+mkdir /home/hadoop/hadoopdata;
+
+
+
+ssh-keygen
+ssh-copy-id -i ~/.ssh/id_rsa.pub 172.29.44.65
+ssh-copy-id -i ~/.ssh/id_rsa.pub 172.29.44.66
+ssh-copy-id -i ~/.ssh/id_rsa.pub 172.29.44.67
+ssh-copy-id -i ~/.ssh/id_rsa.pub 172.29.170.166
+ssh-copy-id -i ~/.ssh/id_rsa.pub 172.29.171.39
+
+ssh hadoop@
+ssh 
+
+
+Sometime when after doing the keygen, still you are not able to ssh to localhost, chekc the log file as root /var/log/secure
+u might find the issue sometimes like "Authentication refused: bad ownership or modes for directory /home/logsense/.ssh" if so 
+do the below
+> chmod g-w /home/your_user
+> chmod 700 /home/your_user/.ssh
+> chmod 600 /home/your_user/.ssh/authorized_keys
+
+
+cd HADOOP_HOME/hadoop-0.20.203.0/local-conf; scp -r hadoop@172.29.44.67:/home/hadoop/HADOOP_HOME/hadoop-0.20.203.0/local-conf/
+cd ..;mv conf conf.original;
+
+mkdir /home/hadoop/hadoopdata/hdfs/data;
+mkdir /home/hadoop/hadoopdata/hdfs/name;
