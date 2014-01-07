@@ -1,7 +1,8 @@
 /bin
-/build
+/build/classes
+/build/lib
 /ant
-/conf
 /input
 /output
 /.DS_Store
+/.settings
