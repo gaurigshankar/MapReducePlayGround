@@ -1,58 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/Java SE 6 [1.6.0_65-b14-462]"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/hadoop-ant-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/hadoop-client-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/hadoop-core-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/hadoop-examples-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/hadoop-minicluster-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/hadoop-test-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/hadoop-tools-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/asm-3.2.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/aspectjrt-1.6.11.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/aspectjtools-1.6.11.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-beanutils-1.7.0.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-beanutils-core-1.8.0.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-cli-1.2.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-codec-1.4.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-collections-3.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-configuration-1.6.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-daemon-1.0.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-digester-1.8.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-el-1.0.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-httpclient-3.0.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-io-2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-lang-2.4.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-logging-api-1.0.4.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-math-2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/commons-net-3.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/core-3.1.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/hadoop-capacity-scheduler-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/hadoop-fairscheduler-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/hadoop-thriftfs-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/hsqldb-1.8.0.10.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jackson-core-asl-1.8.8.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jackson-mapper-asl-1.8.8.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jasper-compiler-5.5.12.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jasper-runtime-5.5.12.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jdeb-0.8.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jersey-core-1.8.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jersey-json-1.8.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jersey-server-1.8.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jets3t-0.6.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jetty-6.1.26.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jetty-util-6.1.26.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/jsch-0.1.42.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/junit-4.5.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/kfs-0.2.2.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/log4j-1.2.15.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/mockito-all-1.8.5.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/oro-2.0.8.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/servlet-api-2.5-20081211.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/slf4j-api-1.4.3.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/slf4j-log4j12-1.4.3.jar"/>
-	<classpathentry kind="lib" path="/usr/local/Cellar/hadoop/1.2.1/libexec/lib/xmlenc-0.52.jar"/>
+	<classpathentry excluding="main/java/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-core/0.20.2/200f54e0051f3148fae8d8fb66fa3f477e52777f/hadoop-core-0.20.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/6c5459816530a1962ac18cd315cc775b1b384329/commons-cli-1.2-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/xmlenc/xmlenc/0.52/d82554efbe65906d83b3d97bd7509289e9db561a/xmlenc-0.52.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.3/fd32786786e2adb664d5ecc965da47629dca14ba/commons-codec-1.3.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.3/ee264b5d7a0f939d5999398c7f1ade031db3fcec/commons-codec-1.3-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/oro/oro/2.0.8/5592374f834645c4ae250f4c9fbb314c9369d698/oro-2.0.8.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/oro/oro/2.0.8/3598e790ecd76ff7eb249853d4d00822ae1a5e71/oro-2.0.8-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-net/commons-net/1.4.1/abb932adb2c10790c1eaa4365d3ac2a1ac7cb700/commons-net-1.4.1.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-net/commons-net/1.4.1/4c85b39e7f03471338bf7d36558eefe1e463e3de/commons-net-1.4.1-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty-util/6.1.14/1b707d5884e35c9b97114a24aa9ee94ca531fa21/jetty-util-6.1.14.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty-util/6.1.14/b8a198a1569ef3510fe7d000e25be90d3f4c2d89/jetty-util-6.1.14-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/servlet-api-2.5/6.1.14/5f07601ab7d7c85dd9e38a17c0e1b0edfbd4a191/servlet-api-2.5-6.1.14.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/servlet-api-2.5/6.1.14/19bf7c8cf3b67563414aeeb462c143a9748795d4/servlet-api-2.5-6.1.14-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty/6.1.14/5ded67b609e59c27e82ff61b510773d28c9bef56/jetty-6.1.14.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty/6.1.14/344ea56717a95d1d6b97c54b98d59720d13320e6/jetty-6.1.14-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/tomcat/jasper-runtime/5.5.12/f3a50a55414655b9843f5a089923ea83d49dc55e/jasper-runtime-5.5.12.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/tomcat/jasper-compiler/5.5.12/c594866c64565344c0e7bdc9bf4fee70290c4dd5/jasper-compiler-5.5.12.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jsp-api-2.1/6.1.14/756b3fac155e31bd0e85545dbf953495e0455c73/jsp-api-2.1-6.1.14.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jsp-api-2.1/6.1.14/66b48b3eae1a16ae47f3d3abf27f64a0818f7462/jsp-api-2.1-6.1.14-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/core/3.1.1/88c83ce444cf46d02494da37c9fa1eebc9ce9cea/core-3.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/ant/ant/1.6.5/7d18faf23df1a5c3a43613952e0e8a182664564b/ant-1.6.5.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/ant/ant/1.6.5/9e0a847494563f35f9b02846a1c1eb4aa2ee5a9a/ant-1.6.5-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jsp-2.1/6.1.14/3a1df1e8e0fa56e9a940abbd19bc6f397fce16b5/jsp-2.1-6.1.14.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jsp-2.1/6.1.14/191e377d51c184744db940a578cfadadda02de7a/jsp-2.1-6.1.14-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/commons-logging-1.1.1-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-el/commons-el/1.0/1df2c042b3f2de0124750241ac6c886dbfa2cc2c/commons-el-1.0.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-el/commons-el/1.0/fd3913ea5d63d0aed104f3665ab99ae5352d6b8e/commons-el-1.0-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-httpclient/commons-httpclient/3.1/964cd74171f427720480efdec40a7c7f6e58426a/commons-httpclient-3.1.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/commons-httpclient/commons-httpclient/3.1/c6d6ea83d0cf16d3ed9c1b7e600fa0f60b9d3159/commons-httpclient-3.1-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/net.java.dev.jets3t/jets3t/0.7.1/2d10b62398360c674b4039ea4f2d1c697f46f6cd/jets3t-0.7.1.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/net.java.dev.jets3t/jets3t/0.7.1/1f14497d3b31b46e33252071a87e32b2e6d6be1/jets3t-0.7.1-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/net.sf.kosmosfs/kfs/0.3/20fcbc065182bdcd706c90a2eb383ae70eb5b223/kfs-0.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/junit/junit/4.5/7059d3d3bedc1fca9b33cde8503095b3576a0bba/junit-4.5.jar" sourcepath="/Users/gshanka/.gradle/caches/modules-2/files-2.1/junit/junit/4.5/72176579bfb4b1dc795cd2bd2d6943b8285729d8/junit-4.5-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/gshanka/.gradle/caches/modules-2/files-2.1/hsqldb/hsqldb/1.8.0.10/7e9978fdb754bce5fcd5161133e7734ecb683036/hsqldb-1.8.0.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

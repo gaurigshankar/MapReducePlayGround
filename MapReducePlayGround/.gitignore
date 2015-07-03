@@ -1,8 +1,9 @@
 /bin
-/build/classes
-/build/lib
+/build/
 /ant
 /input
 /output
 /.DS_Store
 /.settings
+.gradle/
+gradle/

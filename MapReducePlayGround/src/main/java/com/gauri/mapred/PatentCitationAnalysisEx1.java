@@ -6,7 +6,6 @@ import java.util.Iterator;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.FileInputFormat;
 import org.apache.hadoop.mapred.FileOutputFormat;
@@ -22,31 +21,29 @@ import org.apache.hadoop.mapred.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
-public class PatentCitationAnalysisEx2 extends Configured implements Tool{
+public class PatentCitationAnalysisEx1 extends Configured implements Tool{
 
 	public static class MapClass extends MapReduceBase implements Mapper<Text,Text, Text,Text>{
-		@Override
 		public void map(Text key, Text value, OutputCollector<Text, Text> output,Reporter reporter) throws IOException {
 			output.collect(key, value);
 			
 		}
 	}
-	public static class Reduce extends MapReduceBase implements Reducer<Text, Text,Text, IntWritable>{
-		@Override
-		public void reduce(Text key, Iterator<Text> values, OutputCollector<Text, IntWritable> output, Reporter reporter)
+	public static class Reduce extends MapReduceBase implements Reducer<Text, Text,Text, Text>{
+		public void reduce(Text key, Iterator<Text> values, OutputCollector<Text, Text> output, Reporter reporter)
 				throws IOException {
-			int count = 0;
+			String csv ="";
 			while(values.hasNext()){
-				values.next();
-				count++;
+				if(csv.length()>0) csv += ",";
+				csv += values.toString();
 			}
-			output.collect(key, new IntWritable(count));
+			output.collect(key, new Text(csv));
 		}
 	}
 	
 	public int run(String[] args) throws Exception{
 		Configuration conf = getConf();
-		JobConf job = new JobConf(conf,PatentCitationAnalysisEx2.class);
+		JobConf job = new JobConf(conf,PatentCitationAnalysisEx1.class);
 		
 		Path in = new Path(args[0]);
 		Path out = new Path(args[1]);
@@ -71,7 +68,7 @@ public class PatentCitationAnalysisEx2 extends Configured implements Tool{
 		return 0;
 	}
 	public static void main(String[] args) throws Exception{
-		int res = ToolRunner.run(new Configuration(), new PatentCitationAnalysisEx2(), args);
+		int res = ToolRunner.run(new Configuration(), new PatentCitationAnalysisEx1(), args);
 		System.exit(res);
 	}
 }
